@@ -87,13 +87,15 @@
         <h2 id="This-is-my-second-try"><a href="#This-is-my-second-try" class="headerlink" title="This is my second try"></a>This is my second try</h2><hr>
 <p>判断语句</p>
 <ul>
-<li><p>[x]计算时间差</p>
+<li><p>[x] 计算时间差</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;   <span class="keyword">int</span> hour1, minute1;</span><br><span class="line">    <span class="keyword">int</span> hour2, minute2;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"请输入第一个时间，格式5:30:"</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d:%d"</span>, &amp;hour1, &amp;minute1);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"请输入第二个时间，格式5:30:"</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d:%d"</span>, &amp;hour2, &amp;minute2);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> ih = hour2 - hour1;</span><br><span class="line">    <span class="keyword">int</span> im = minute2 - minute1;</span><br><span class="line">    <span class="keyword">if</span> (im &lt; <span class="number">0</span>)&#123;</span><br><span class="line">    <span class="comment">/*判断minute2是否不够减minute1*/</span></span><br><span class="line">        im = im + <span class="number">60</span>;</span><br><span class="line">        ih --;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"时差是%d小时%d分\n"</span>, ih, im);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>[x]关系运算的结果0或1</p>
+<li><p>[x] 关系运算的结果0或1</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="number">5</span>==<span class="number">3</span>);<span class="comment">//输出结果为0</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="number">5</span>&gt;<span class="number">3</span>);<span class="comment">//输出结果为1</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="number">5</span>&lt;<span class="number">3</span>);<span class="comment">//输出结果为0</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="number">7</span> &gt;= <span class="number">3</span> + <span class="number">4</span>);<span class="comment">//输出结果为1</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="number">5</span> &gt; <span class="number">3</span> == <span class="number">6</span> &gt; <span class="number">4</span>);<span class="comment">//输出结果为1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>[x]关系运算符的优先级比算术运算符的优先级低，但是比赋值运算符的优先级高<br>如  7 &gt;= 3 + 4 是先把3 + 4的结果算出来再与左边的7比较<br>而不是先比较7 &gt;=3</p>
+<li><blockquote>
+<p>[x]关系运算符的优先级比算术运算符的优先级低，但是比赋值运算符的优先级高<br>如  7 &gt;= 3 + 4 是先把3 + 4的结果算出来再与左边的7比较<br>而不是先比较7 &gt;=3</p>
+</blockquote>
 </li>
 </ul>
 <hr>
@@ -118,7 +120,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/06/My-secondBlog/" data-id="cjwmuqgho0001sksq7x3d5rfq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/06/My-secondBlog/" data-id="cjwmzi2lk0000ocsqpeqapco5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -163,7 +165,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/06/hello-world/" data-id="cjwmuqghj0000sksqfrhcyphx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/06/hello-world/" data-id="cjwmzi2lp0001ocsqv1fyh0vd" class="article-share-link">Share</a>
       
       
     </footer>

@@ -303,20 +303,35 @@
             <h1 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a>安装HEXO</h1><p>1.下载node.js <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
 <p>2.代开终端检查</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v </span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<p># </p>
 <p>利用npm安装HEXO，但是国内原连接速度太慢，先安装cnpm 连接阿里的源</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>3.开始安装HEXO的基本框架<br><code>cnpm install -g hexo-cli</code></p>
-<p>4.验证HEXO安装结果<br><figure class="highlight plain"><figcaption><span>-v```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 初始化博客</span><br><span class="line">1.选择合适路径建立文件夹BLOG，建立的博客内容将在此文件夹内存储</span><br><span class="line">2.初始化一个博客</span><br><span class="line">```sudo hexo init</span><br></pre></td></tr></table></figure></p>
-<p>3.启动博客<br><figure class="highlight plain"><figcaption><span>s```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">得到一个博客的地址</span><br><span class="line"></span><br><span class="line"># 创建一篇新文章</span><br><span class="line">1.```hexo n &quot;文章名字&quot;</span><br></pre></td></tr></table></figure></p>
-<p>2.进入到~BLOG\source_posts<br>3.打开文章标题修改<br>4.文件夹目录返回二级来到BLOG<br><figure class="highlight plain"><figcaption><span>clean```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```hexo g</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><figcaption><span>s```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">即可在网站上看到修改</span><br><span class="line"></span><br><span class="line">#  在GitHub上部署网站博客</span><br><span class="line">1.新建一个仓库new repository</span><br><span class="line">昵称.github.io</span><br><span class="line"></span><br><span class="line">2.安装git部署</span><br><span class="line">```cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<p>3.开始安装HEXO的基本框架</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>4.验证HEXO安装结果<br>hexo -v</p>
+<h1 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h1><p>1.选择合适路径建立文件夹BLOG，建立的博客内容将在此文件夹内存储<br>2.初始化一个博客</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo hexo init</span><br></pre></td></tr></table></figure>
+<p>3.启动博客</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>得到一个博客的地址</p>
+<p>得到一个博客的地址</p>
+<p>3.启动博客<br>hexo s<br>得到一个博客的地址</p>
+<h1 id="创建一篇新文章"><a href="#创建一篇新文章" class="headerlink" title="创建一篇新文章"></a>创建一篇新文章</h1><p>1.hexo n “文章名字”<br>2.进入到~BLOG\source_posts<br>3.打开文章标题修改<br>4.文件夹目录返回二级来到BLOG</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>即可在网站上看到修改</p>
+<h1 id="在GitHub上部署网站博客"><a href="#在GitHub上部署网站博客" class="headerlink" title="在GitHub上部署网站博客"></a>在GitHub上部署网站博客</h1><p>1.新建一个仓库new repository<br>昵称.github.io</p>
+<p>2.安装git部署</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 <p>3.设置BLOG目录下_config.yml<br>找到#Delpoyment<br><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1560081535330.png" alt="1560081535330"></p>
 <p><a href="https://github.com/PeisonGao/PeisonGaoBlog.github.io.git" target="_blank" rel="noopener">https://github.com/PeisonGao/PeisonGaoBlog.github.io.git</a></p>
 <p>4.配置邮箱用户名</p>
-<p>git config –global user.email “<a href="mailto:1196034169@qq.com" target="_blank" rel="noopener">1196034169@qq.com</a>“<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##遇到的问题</span><br><span class="line">本地电脑生成SSH公钥粘贴到GitHub上</span><br><span class="line">生成密钥</span><br><span class="line">``` ssh-keygen -t rsa -C greenovia@qq.com（换成你的邮箱地址）</span><br></pre></td></tr></table></figure></p>
-<p>这样在 /c/Users/Administrator/.ssh/id_rsa文件中就生成了公钥</p>
-<p><code>hexo d</code>推送到github上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;1196034169@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>遇到的问题<br>本地电脑生成SSH公钥粘贴到GitHub上<br>生成密钥<br> ssh-keygen -t rsa -C <a href="mailto:greenovia@qq.com" target="_blank" rel="noopener">greenovia@qq.com</a>（换成你的邮箱地址）<br>这样在 /c/Users/Administrator/.ssh/id_rsa文件中就生成了公钥</p>
+</blockquote>
+<p>推送到github上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <h1 id="他人的例子"><a href="#他人的例子" class="headerlink" title="他人的例子"></a>他人的例子</h1><p>一、准备工作 </p>
 <ol>
 <li>下载GitHub,我下载的是Git-2.9.0-64-bit.exe版本 </li>
@@ -450,11 +465,10 @@
 <li><p>[x] 关系运算的结果0或1</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="number">5</span>==<span class="number">3</span>);<span class="comment">//输出结果为0</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="number">5</span>&gt;<span class="number">3</span>);<span class="comment">//输出结果为1</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="number">5</span>&lt;<span class="number">3</span>);<span class="comment">//输出结果为0</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="number">7</span> &gt;= <span class="number">3</span> + <span class="number">4</span>);<span class="comment">//输出结果为1</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, <span class="number">5</span> &gt; <span class="number">3</span> == <span class="number">6</span> &gt; <span class="number">4</span>);<span class="comment">//输出结果为1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><blockquote>
-<p>[x]关系运算符的优先级比算术运算符的优先级低，但是比赋值运算符的优先级高<br>如  7 &gt;= 3 + 4 是先把3 + 4的结果算出来再与左边的7比较<br>而不是先比较7 &gt;=3</p>
-</blockquote>
+<li><p>[x]关系运算符的优先级比算术运算符的优先级低，但是比赋值运算符的优先级高</p>
 </li>
 </ul>
+<p>如  7 &gt;= 3 + 4 是先把3 + 4的结果算出来再与左边的7比较而不是先比较7 &gt;=3</p>
 <hr>
 <p>我们可以将计算机这样理解<br>它是读取一些输入，<br>在模型里面做一些计算，<br>再把计算的结果做一些输出。<br>虽然有时计算的模型有些复杂</p>
 <hr>
